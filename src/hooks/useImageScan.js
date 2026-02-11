@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { scanImage } from "../api/imageApi";
+import { scanImage } from "../api/ImageApi.js";
 
 /**
  * Custom hook for LUMEN AI image scanning
