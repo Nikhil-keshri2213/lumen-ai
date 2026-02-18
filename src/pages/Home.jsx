@@ -7,24 +7,32 @@ import AnalysisReport from "../components/results/AnalysisReport";
 import useImageScan from "../hooks/useImageScan";
 
 const Home = () => {
-  const { scan, loading, result, error } = useImageScan();
+  const { scan, loading, result, error, reset } = useImageScan();
 
   return (
     <main className="bg-black text-white">
-      <Hero />
-      <UploadBox onScan={scan} loading={loading} />
+      {result ? (
+        <>
+          <Hero />
+          <AnalysisReport data={result} onBack={reset} />
+          <Features />
+          <HowToUse />
+          <About />
+        </>
+      ) : (
+        <>
+          <Hero />
+          <UploadBox onScan={scan} loading={loading} />
 
-      {error && (
-        <div className="mt-6 text-center text-sm text-red-500">
-          {error}
-        </div>
+          {error && (
+            <div className="mt-6 text-center text-sm text-red-500">{error}</div>
+          )}
+
+          <Features />
+          <HowToUse />
+          <About />
+        </>
       )}
-
-      {result && <AnalysisReport data={result} />}
-      
-      <Features />
-      <HowToUse />
-      <About />
     </main>
   );
 };

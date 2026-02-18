@@ -19,28 +19,37 @@ const ScanButton = ({ onScan, file, loading }) => {
   }, [loading]);
 
   return (
-    // Reduced width from max-w-md to max-w-xs for a smaller size
-    <div className="mt-8 w-full max-w-xs mx-auto space-y-6">
-      <Button
-        size="lg"
-        variant="primary"
-        loading={loading}
-        disabled={!file}
-        onClick={() => onScan(file)}
-        className="w-full shadow-[0_0_20px_rgba(255,255,255,0.05)]"
-      >
-        Scan Image
-      </Button>
+    <div className="mt-4 w-full max-w-xs mx-auto space-y-4">
 
+      {/* 🔹 Show Button Only When NOT Loading */}
+      {!loading && (
+        <Button
+          size="lg"
+          variant="primary"
+          disabled={!file}
+          onClick={() => onScan(file)}
+          className="w-full shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:text-white"
+        >
+          Scan Image
+        </Button>
+      )}
+
+      {/* 🔹 Show Progress Only When Loading */}
       {loading && (
         <div className="animate-in fade-in slide-in-from-top-2">
           <div className="flex justify-between mb-2">
-            <span className="text-[10px] text-white font-semibold">Analyzing Pixels...</span>
-            <span className="text-[10px] text-white font-mono">{progress}%</span>
+            <span className="text-[10px] text-white font-semibold">
+              Analyzing Pixels...
+            </span>
+            <span className="text-[10px] text-white font-mono">
+              {progress}%
+            </span>
           </div>
+
           <ProgressBar value={progress} />
         </div>
       )}
+
     </div>
   );
 };

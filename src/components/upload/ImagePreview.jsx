@@ -1,14 +1,14 @@
-const ImagePreview = ({ file }) => {
+const ImagePreview = ({ file, className = "" }) => {
   if (!file) return null;
 
   const imageUrl = URL.createObjectURL(file);
 
   return (
-    <div className="mt-8 flex justify-center">
+    <div className="flex justify-center">
       <img
         src={imageUrl}
         alt="Preview"
-        className="max-h-80 rounded-2xl border border-white object-contain shadow-lg"
+        className={`w-auto object-contain ${className}`}
         onLoad={() => URL.revokeObjectURL(imageUrl)}
       />
     </div>

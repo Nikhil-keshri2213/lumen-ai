@@ -1,14 +1,12 @@
-const ELAView = ({ image }) => {
+const ImageView = ({ image, title }) => {
   if (!image) return null;
 
-  const src = image.startsWith("data:")
-    ? image
-    : `data:image/png;base64,${image}`;
+  const src = image.startsWith("data:") ? image : `data:image/png;base64,${image}`;
 
   return (
     <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-4">
       <h4 className="mb-3 text-sm font-semibold text-emerald-400">
-        ELA Visualization
+        {title}
       </h4>
       <img
         src={src}
@@ -19,4 +17,4 @@ const ELAView = ({ image }) => {
   );
 };
 
-export default ELAView;
+export default ImageView;

@@ -18,7 +18,7 @@ const Button = ({
     primary: "bg-white text-black border border-transparent",
     
     // Secondary: Cyan glow outline
-    secondary: "bg-transparent text-white border border-white/10 hover:border-[#00FFFF] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)]",
+    secondary: "bg-transparent text-white border border-white/10 hover:shadow-[0_0_15px_rgba(0,255,255,0.2)]",
     
     danger: "bg-[#FF00FF]/10 text-[#FF00FF] border border-[#FF00FF]/20 hover:bg-[#FF00FF] hover:text-white",
     
