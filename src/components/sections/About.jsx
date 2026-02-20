@@ -7,7 +7,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 bg-black">
+    <section id="about" className="py-24 px-6 bg-black font-sans">
       <div className="mx-auto max-w-7xl grid gap-14 lg:grid-cols-2">
         
         {/* Text */}

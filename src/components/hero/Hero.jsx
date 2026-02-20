@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <section 
       ref={vantaRef} 
-      className="relative flex min-h-screen items-center justify-start overflow-hidden bg-black px-8 md:px-20"
+      className="relative flex min-h-screen items-center justify-start overflow-hidden bg-black px-8 md:px-20 font-sans"
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60 z-0" />

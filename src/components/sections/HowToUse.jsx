@@ -42,7 +42,7 @@ const HowToUse = () => {
   };
 
   return (
-    <section className="relative py-32 px-6 bg-black" id="how-to-use-p">
+    <section className="relative py-32 px-6 bg-black font-sans" id="how-to-use-p">
       <div className="relative z-10 mx-auto max-w-4xl" id="how-to-use">
         <div className="mb-24 text-center">
           <h2 className="text-sm font-bold tracking-[0.2em] text-zinc-500 uppercase">

@@ -41,7 +41,7 @@ const FEATURES = [
 
 const Features = () => {
   return (
-    <section className="relative py-32 px-6 bg-black overflow-hidden" id="features-p">
+    <section className="relative py-32 px-6 bg-black overflow-hidden font-sans" id="features-p">
       {/* Dynamic CMY Background Glows */}
       <div className="absolute top-0 right-0 h-[500px] w-[500px] bg-[#00FFFF]/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-[#FF00FF]/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2" />

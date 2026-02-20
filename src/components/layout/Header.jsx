@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header 
       style={{ backgroundColor: "rgba(0, 0, 0, 0.9)", borderColor: "rgba(255, 255, 255, 0.1)" }} 
-      className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
+      className="fixed top-0 z-50 w-full border-b backdrop-blur-md font-sans"
     >
       <div className="flex items-center px-4 py-3">
         
