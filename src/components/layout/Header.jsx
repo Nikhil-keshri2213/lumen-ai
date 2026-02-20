@@ -34,7 +34,7 @@ const Header = () => {
       <div className="flex items-center px-20 py-3">
         
         {/* Logo Section - Leftmost with individual padding */}
-        <div className="flex-grow flex justify-start">
+        {/* <div className="flex-grow flex justify-start">
           <div 
             onClick={scrollToTop} 
             className="cursor-pointer transition-transform hover:scale-105 active:scale-95 px-4 py-2 rounded-lg flex flex-col items-center justify-center shadow-lg"
@@ -50,7 +50,14 @@ const Header = () => {
               Digital Forensics
             </p>
           </div>
-        </div>
+        </div> */}
+
+        <img
+          src="../assets/image.png"
+          alt="Lumen Ai Logo"
+          onClick={scrollToTop}
+          className="cursor-pointer h-12 w-auto transition-transform hover:scale-105 active:scale-95"
+        />
 
         {/* Desktop Navigation - Stays in original relative position */}
         <nav className="hidden md:flex items-center gap-4 pr-6">
