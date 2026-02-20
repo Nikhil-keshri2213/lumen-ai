@@ -50,7 +50,7 @@ const UploadBox = ({ onScan, loading }) => {
   return (
     <section
       id="scan-p"
-      className="relative px-6 py-32 bg-black flex flex-col items-center overflow-hidden"
+      className="relative h-screen px-6 bg-black flex flex-col items-center justify-center overflow-hidden"
     >
       {/* 1. CYBER GRID BACKGROUND */}
       <div
