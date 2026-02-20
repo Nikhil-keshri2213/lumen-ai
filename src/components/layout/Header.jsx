@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/logos/image.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -31,33 +32,18 @@ const Header = () => {
       style={{ backgroundColor: "rgba(0, 0, 0, 0.9)", borderColor: "rgba(255, 255, 255, 0.1)" }} 
       className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
     >
-      <div className="flex items-center px-20 py-3">
+      <div className="flex items-center px-4 py-3">
         
         {/* Logo Section - Leftmost with individual padding */}
-        {/* <div className="flex-grow flex justify-start">
-          <div 
-            onClick={scrollToTop} 
-            className="cursor-pointer transition-transform hover:scale-105 active:scale-95 px-4 py-2 rounded-lg flex flex-col items-center justify-center shadow-lg"
-            style={{ 
-              background: "linear-gradient(to right, #00FFFF, #FF00FF, #FFFF00)"
-            }}>
-
-            <h1 className="text-xl font-black tracking-tighter text-black drop-shadow-[1px_1px_2px_rgba(0,0,0,0.5)] leading-none">
-              LUMEN <span className="opacity-90">Ai</span>
-            </h1>
-            
-            <p className="text-[8px] font-black uppercase tracking-[0.1em] text-black drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)]">
-              Digital Forensics
-            </p>
-          </div>
-        </div> */}
-
-        <img
-          src="../assets/image.png"
+        <div className="flex-grow flex justify-start">
+          <img
+          src={logo}
           alt="Lumen Ai Logo"
           onClick={scrollToTop}
-          className="cursor-pointer h-12 w-auto transition-transform hover:scale-105 active:scale-95"
+          className="cursor-pointer h-14 w-auto"
         />
+        </div>
+
 
         {/* Desktop Navigation - Stays in original relative position */}
         <nav className="hidden md:flex items-center gap-4 pr-6">

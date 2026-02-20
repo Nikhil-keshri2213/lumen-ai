@@ -59,6 +59,7 @@ const UploadBox = ({ onScan, loading }) => {
           backgroundImage: `linear-gradient(#ffffff05 1px, transparent 1px), linear-gradient(90deg, #ffffff05 1px, transparent 1px)`,
           backgroundSize: "40px 40px",
         }}
+        id="scan"
       />
 
       {/* 2. ENHANCED CMY GLOWS */}
@@ -66,7 +67,7 @@ const UploadBox = ({ onScan, loading }) => {
       <div className="absolute bottom-[-10%] right-[-5%] w-[400px] h-[400px] bg-[#FF00FF]/15 blur-[100px] rounded-full pointer-events-none" />
       <div className="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-[#FFFF00]/15 blur-[100px] rounded-full pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-2xl" id="scan">
+      <div className="relative z-10 w-full max-w-2xl" id="scan-2">
         {/* Header Section */}
         <div className="mb-12 text-center">
           <h2 className="text-sm font-bold tracking-[0.2em] text-zinc-500 uppercase">

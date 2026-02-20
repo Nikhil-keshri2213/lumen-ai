@@ -103,33 +103,9 @@ const Footer = () => {
             href="https://nikhil-keshri2213.github.io/MyPortfolio/"
             target="_blank"
             rel="noreferrer"
-            className="group ml-1 inline-block font-bold text-white transition-all"
+            className="group ml-1 inline-block text-white font-bold transition-all"
           >
-            <span className="transition-colors duration-300 group-hover:text-[#00FFFF]">
-              Ni
-            </span>
-
-            <span className="transition-colors duration-300 group-hover:text-[#FF00FF]">
-              kh
-            </span>
-
-            <span className="transition-colors duration-300 group-hover:text-[#FFFF00]">
-              il
-            </span>
-
-            <span className="mx-[2px]"></span>
-
-            <span className="transition-colors duration-300 group-hover:text-[#00FFFF]">
-              Ke
-            </span>
-
-            <span className="transition-colors duration-300 group-hover:text-[#FF00FF]">
-              sh
-            </span>
-
-            <span className="transition-colors duration-300 group-hover:text-[#FFFF00]">
-              ri
-            </span>
+            <span className="hover:text-transparent transition-all bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">Nikhil Keshri</span>
           </a>
         </p>
       </div>
