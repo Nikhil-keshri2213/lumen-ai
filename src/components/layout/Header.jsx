@@ -22,6 +22,7 @@ const Header = () => {
     const yOffset = -80;
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: "smooth" });
+    window.history.replaceState(null, "", window.location.pathname);
     setOpen(false);
   };
 
@@ -74,7 +75,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
-          style={{ color: "#00FFFF" }}
+          style={{ color: "#FFFFFF" }}
           className="md:hidden text-2xl pr-4"
         >
           {open ? "✕" : "☰"}

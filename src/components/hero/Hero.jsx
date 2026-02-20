@@ -32,6 +32,15 @@ const Hero = () => {
     };
   }, [vantaEffect]);
 
+
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const yOffset = -80; // header height
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    window.history.replaceState(null, "", window.location.pathname);
+  };
   return (
     <section 
       ref={vantaRef} 
@@ -66,42 +75,39 @@ const Hero = () => {
           Shedding light on digital truth.
         </p>
 
-        {/* CTA Buttons */}
+       
         <div className="mt-12 flex flex-wrap justify-start gap-5">
-          {/* Scan Button: Default Cyan, Hover White */}
-          <a
-            href="#scan"
+          <button
+            onClick={() => handleScroll("scan")}
             onMouseEnter={() => setHoveredBtn('scan')}
             onMouseLeave={() => setHoveredBtn(null)}
             style={{ 
               backgroundColor: hoveredBtn === 'scan' ? '#00FFFF' : '#FFFFFF',
               color: '#000000',
-              transition: 'all 0.3s ease'
+              transition: "all 0.2s ease-in-out"
             }}
             className="rounded-xl px-10 py-4 font-black uppercase tracking-tighter hover:scale-105"
           >
             Scan Image Now
-          </a>
+          </button>
 
-          {/* Learn More Button: Default Magenta Border, Hover Magenta Fill */}
-          <a
-            href="#features"
+          <button
+            onClick={() => handleScroll("features")}
             onMouseEnter={() => setHoveredBtn('features')}
             onMouseLeave={() => setHoveredBtn(null)}
             style={{ 
               borderColor: '#FF00FF',
               backgroundColor: hoveredBtn === 'features' ? '#FF00FF' : 'transparent',
               color: hoveredBtn === 'features' ? '#000000' : '#FF00FF',
-              transition: 'all 0.3s ease'
+              transition: "all 0.2s ease-in-out"
             }}
             className="rounded-xl border-2 px-10 py-4 font-bold uppercase tracking-widest backdrop-blur-md hover:scale-105"
           >
             Explore Technology
-          </a>
+          </button>
         </div>
       </div>
 
-      {/* CMYK Bottom Strip */}
       <div className="absolute bottom-0 left-0 w-full h-[2px] flex">
         <div style={{ backgroundColor: "#00FFFF" }} className="flex-1"></div>
         <div style={{ backgroundColor: "#FF00FF" }} className="flex-1"></div>

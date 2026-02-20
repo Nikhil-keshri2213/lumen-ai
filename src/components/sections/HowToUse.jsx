@@ -28,17 +28,23 @@ const STEPS = [
 ];
 
 const HowToUse = () => {
+
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const yOffset = -80; // header height
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
   const handleStartScan = () => {
-    const scanSection = document.getElementById("scan");
-    if (scanSection) {
-      scanSection.scrollIntoView({ behavior: "smooth" });
-    }
+    handleScroll("scan");
   };
 
   return (
-    <section className="relative py-32 px-6 bg-black">
-      <div className="relative z-10 mx-auto max-w-4xl">
-        <div className="mb-24 text-center" id="how-to-use">
+    <section className="relative py-32 px-6 bg-black" id="how-to-use-p">
+      <div className="relative z-10 mx-auto max-w-4xl" id="how-to-use">
+        <div className="mb-24 text-center">
           <h2 className="text-sm font-bold tracking-[0.2em] text-zinc-500 uppercase">
             Process
           </h2>
@@ -118,6 +124,7 @@ const HowToUse = () => {
             <i className="ri-arrow-right-line relative z-10 text-xl transition-transform group-hover:translate-x-1"></i>
           </button>
         </div>
+
       </div>
     </section>
   );
