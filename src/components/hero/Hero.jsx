@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import RINGS from 'vanta/dist/vanta.rings.min';
+import mainLogo from "../../assets/logos/mainLogo.svg";
 
 const Hero = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -57,14 +58,16 @@ const Hero = () => {
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-4xl">
-        <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight">
+        {/* <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">LUMEN</span>
           <span 
             className="ml-3 rounded-2xl px-4 py-4 inline-block text-white text-4xl md:text-5xl align-top"
             style={{ background: "linear-gradient(to right, #00FFFF, #FF00FF, #FFFF00)" }}>
             Ai
           </span>
-        </h1>
+        </h1> */}
+
+        <img src={mainLogo} alt="Lumen Ai Logo" className="mt-4 w-auto h-32" />
 
         <p className="mt-8 text-xl md:text-2xl text-zinc-300 max-w-2xl">
           Reveal the unseen truth in digital images using
@@ -86,7 +89,7 @@ const Hero = () => {
               color: '#000000',
               transition: "all 0.2s ease-in-out"
             }}
-            className="rounded-xl px-10 py-4 font-black uppercase tracking-tighter hover:scale-105"
+            className="rounded-xl px-10 py-4 font-extrabold uppercase tracking-tighter hover:scale-105"
           >
             Scan Image Now
           </button>
@@ -101,7 +104,7 @@ const Hero = () => {
               color: hoveredBtn === 'features' ? '#000000' : '#FF00FF',
               transition: "all 0.2s ease-in-out"
             }}
-            className="rounded-xl border-2 px-10 py-4 font-bold uppercase tracking-widest backdrop-blur-md hover:scale-105"
+            className="rounded-xl border-2 px-10 py-4 font-extrabold uppercase tracking-widest backdrop-blur-md hover:scale-105"
           >
             Explore Technology
           </button>
