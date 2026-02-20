@@ -137,7 +137,7 @@ const UploadBox = ({ onScan, loading }) => {
                 />
               </div>
 
-              <h4 className="text-2xl font-black text-white uppercase tracking-tight">
+              <h4 className="text-2xl font-extrabold text-white uppercase tracking-tight">
                 {isDragging ? "Release Image" : "Upload Image"}
               </h4>
               <p className="mt-3 text-zinc-500 text-sm font-medium">
