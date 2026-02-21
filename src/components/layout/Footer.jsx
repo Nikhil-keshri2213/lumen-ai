@@ -11,7 +11,7 @@ const Footer = () => {
             Advanced AI-powered image authentication platform.
           </p>
           <p className="mt-2 text-xs italic text-zinc-500">
-            “Satyam Param Dhimahi” – Truth above all
+            "Bringing Light to Digital Truth"
           </p>
 
           <div className="mt-4 flex gap-4 text-xl text-zinc-400">
