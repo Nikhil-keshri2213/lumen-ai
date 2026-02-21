@@ -69,15 +69,17 @@ const Hero = () => {
 
         <img src={mainLogo} alt="Lumen Ai Logo" className="mt-4 w-auto h-32" />
 
-        <p className="mt-8 text-xl md:text-2xl text-zinc-300 max-w-2xl">
-          Reveal the unseen truth in digital images using
-          <span className="font-bold text-white"> AI-Powered Forensics</span>
+        <p className="mt-8 text-xl md:text-2xl text-zinc-300 max-w-2xl font-serif">
+          Reveal the unseen truth in digital images using <br />
+          <span className="font-semibold text-white uppercase"> Ai-Powered Forensics.</span>
         </p>
 
+        <p className="mt-4 text-md md:text-lg text-white max-w-3xl font-serif">
+          India’s AI engine for uncovering the truth behind every image.
+        </p>
         <p className="mt-4 text-lg text-zinc-400">
           Shedding light on digital truth.
         </p>
-
        
         <div className="mt-12 flex flex-wrap justify-start gap-5">
           <button

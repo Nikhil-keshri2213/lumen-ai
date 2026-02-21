@@ -16,16 +16,31 @@ const About = () => {
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">LUMEN</span> Ai
           </h2>
 
-          <p className="mt-6 text-white text-lg">
+          {/* <p className="mt-6 text-white text-lg">
             <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">LUMEN</span> Ai is
-            built to combat digital misinformation by providing reliable image
+            build in India's Deep Learning Tool to combat digital misinformation by providing reliable image
             authenticity verification.
           </p>
 
           <p className="mt-4 text-zinc-400 leading-relaxed">
             Our system combines Error Level Analysis with deep neural networks to
             deliver accurate, explainable, and fast image forensics.
-          </p>
+          </p> */}
+
+          <p className="mt-6 text-white text-lg">
+          <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
+            LUMEN
+          </span>{" "}
+          Ai is India’s advanced Deep Learning tool built to combat digital misinformation and
+          restore trust in visual content through reliable image authenticity verification.
+        </p>
+
+        <p className="mt-4 text-zinc-400 leading-relaxed">
+          Our system intelligently combines Error Level Analysis with powerful deep neural networks
+          to deliver fast, accurate, and explainable image forensics. With cutting-edge AI innovation,
+          LUMEN Ai empowers individuals, organizations, and media platforms to make informed decisions
+          and promote a more transparent digital world.
+        </p>
         </div>
 
         {/* Stats Grid */}
