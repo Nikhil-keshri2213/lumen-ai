@@ -5,9 +5,12 @@ const ImageView = ({ image, title }) => {
 
   return (
     <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-4">
-      <h4 className="mb-3 text-sm font-semibold text-emerald-400">
+      {/* <h4 className="mb-3 text-sm font-semibold text-emerald-400">
         {title}
-      </h4>
+      </h4> */}
+      <span className="inline-block underline mb-3 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
+        {title}
+      </span>
       <img
         src={src}
         alt="ELA Output"

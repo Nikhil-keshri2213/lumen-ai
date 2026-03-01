@@ -21,9 +21,12 @@ const ScanSummary = ({
 
       {/* ================= RESULT ================= */}
       <div>
-        <h4 className="mb-4 text-sm font-semibold text-emerald-400">
+        {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Scan Result
-        </h4>
+        </h4> */}
+        <span className="inline-block underline mb-3 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
+          Scan Result
+        </span>
 
         <p
           className={`text-2xl font-bold ${
@@ -52,9 +55,12 @@ const ScanSummary = ({
 
       {/* ================= IMAGE DETAILS ================= */}
       <div>
-        <h4 className="mb-4 text-sm font-semibold text-emerald-400">
+        {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Image Details
-        </h4>
+        </h4> */}
+        <span className="inline-block underline mb-4 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
+          Image Details
+        </span>
 
         <ul className="space-y-2 text-sm text-zinc-300">
           {Object.entries(details).map(([key, value]) => (
@@ -75,9 +81,12 @@ const ScanSummary = ({
 
       {/* ================= MODEL INFO ================= */}
       <div>
-        <h4 className="mb-4 text-sm font-semibold text-emerald-400">
+        {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Model Information
-        </h4>
+        </h4> */}
+        <span className="inline-block underline mb-4 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
+          Model Information
+        </span>
 
         <ul className="space-y-2 text-sm text-zinc-300">
           <li className="flex justify-between">

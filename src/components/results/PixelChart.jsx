@@ -99,9 +99,9 @@ const PixelChart = ({ src, title }) => {
   return (
     <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-5 shadow-xl">
       <div className="mb-4 flex items-center justify-between">
-        <h4 className="text-sm font-semibold text-emerald-400">
+        <span className="inline-block underline mb-3 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00]">
           {title}
-        </h4>
+        </span>
         <span className="text-[10px] text-zinc-500">
           RGB Intensity (0 → 255)
         </span>
