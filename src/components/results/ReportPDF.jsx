@@ -86,7 +86,7 @@ const ReportPDFGenerator = ({ data }) => {
       { align: "center" }
     );
 
-    doc.save(`lumen-report-${data.file_info.file_name}.pdf`);
+    doc.save(`lumen-report.pdf`);
   };
 
   return (
