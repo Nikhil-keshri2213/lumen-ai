@@ -17,10 +17,10 @@ const ScanSummary = ({
   };
 
   return (
-    <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-8 space-y-8">
+    <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-4 space-y-8">
 
       {/* ================= RESULT ================= */}
-      <div>
+      <div className="mt-2 bg-[#00ffff]/10 p-4 rounded-lg">
         {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Scan Result
         </h4> */}
@@ -29,7 +29,7 @@ const ScanSummary = ({
         </span>
 
         <p
-          className={`text-2xl font-bold ${
+          className={`text-center text-xl font-bold ${
             isTampered ? "text-red-500" : "text-green-500"
           }`}
         >
@@ -38,23 +38,23 @@ const ScanSummary = ({
 
         <div className="mt-4 space-y-1 text-sm text-zinc-300">
           <p>
-            Model Accuracy:{" "}
+            Model Accuracy: {" "}
             <span className="text-white">
-              {typeof accuracy === "string" ? `${accuracy}%` : accuracy}
+              {typeof accuracy === "string" ? `${accuracy} %` : accuracy}
             </span>
           </p>
 
           <p>
-            Prediction Confidence:{" "}
+            Prediction Confidence: {" "}
             <span className="text-white">
-              {confidence?.toFixed(2)}%
+              {confidence?.toFixed(2)} %
             </span>
           </p>
         </div>
       </div>
 
       {/* ================= IMAGE DETAILS ================= */}
-      <div>
+      <div className="mt-5 bg-[#ff00ff]/10 p-4 rounded-lg">
         {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Image Details
         </h4> */}
@@ -80,7 +80,7 @@ const ScanSummary = ({
       </div>
 
       {/* ================= MODEL INFO ================= */}
-      <div>
+      <div className="mt-5 bg-[#ffff00]/10 p-4 rounded-lg">
         {/* <h4 className="mb-4 text-sm font-semibold text-emerald-400">
           Model Information
         </h4> */}
